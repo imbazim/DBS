@@ -34,9 +34,8 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link href="assets/vendor/fancybox/jquery.fancybox.min.css" rel="stylesheet">
   <link href="assets/css/dbs-main.css" rel="stylesheet">
 
 </head>
@@ -82,7 +81,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="courses.html" class="get-started-btn">Get Started</a>
+      <a href="#apply-now" data-bs-toggle="modal" class="get-started-btn"> <i class="bi bi-check-circle"></i> Apply Now</a>
 
     </div>
   </header><!-- End Header -->
@@ -139,65 +138,128 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
-        <div class="col-lg-5 col-md-6 footer-contact">
-          <a href="index.html" class="logo me-auto"><img src="assets/img/dbs-logo.webp" alt="Doulos Biblical Seminary" class="img-fluid d-block mb-3"></a>
-          <h4>Doulos Biblical Seminary</h4>
-          <p class="mb-2">Cheruvakkal P.O, Ayoor (via), Kollam, Kerala, India - 691533</p>
-          <p class="mb-1"><strong>Phone:</strong> <a href="tel:+919447766316">+91 9447766316</a>, <a href="tel:+919447236394">+91 9447236394</a></p>
-          <p><strong>Email:</strong> <a href="mailto:info@doulosebiblicalseminary.com">info@doulosebiblicalseminary.com</a></p>
+          <div class="col-lg-5 col-md-6 footer-contact">
+            <a href="index.html" class="logo me-auto"><img src="assets/img/dbs-logo.webp" alt="Doulos Biblical Seminary" class="img-fluid d-block mb-3"></a>
+            <h4>Doulos Biblical Seminary</h4>
+            <p class="mb-2">Cheruvakkal P.O, Ayoor (via), Kollam, Kerala, India - 691533</p>
+            <p class="mb-1"><strong>Phone:</strong> <a href="tel:+919447766316">+91 9447766316</a>, <a href="tel:+919447236394">+91 9447236394</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@doulosebiblicalseminary.com">info@doulosebiblicalseminary.com</a></p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="admission.html">Admission</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-5 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>To get latest news and notifications from DBS</p>
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Enter your Email address" required><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
         </div>
-
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="team.html">Our Team</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-5 col-md-6 footer-newsletter">
-          <h4>Join Our Newsletter</h4>
-          <p>To get latest news and notifications from DBS</p>
-          <form action="" method="post">
-            <input type="email" name="email" placeholder="Enter your Email address" required><input type="submit" value="Subscribe">
-          </form>
-        </div>
-
       </div>
     </div>
-  </div>
 
-  <div class="container d-md-flex py-4">
+    <div class="container d-md-flex py-4">
 
-    <div class="me-md-auto text-center text-md-start">
-      <div class="copyright">
-        Copyright &copy; <strong><span>DBS</span></strong>. All Rights Reserved
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          Copyright &copy; <script>document.write(new Date().getFullYear())</script> <strong><span>DBS</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
-    <div class="social-links text-center text-md-right pt-3 pt-md-0">
-      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-      <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
-      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+  </footer><!-- End Footer -->
+
+  <!-- To top -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- WhatsApp btn -->
+  <div id="fixed-button">
+    <a target="_blank" href="https://wa.me/919447766316?text=DBS%20Enquiry%20"><button class="whatsapp-us"><i class="bi bi-whatsapp fs-2"></i></button></a>
+  </div>
+
+  <!-- Apply Now Modal -->
+<div class="modal fade" id="apply-now" tabindex="-1" aria-labelledby="applynowLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-light">
+        <h5 class="modal-title" id="applynowLabel">Apply Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form action="#" method="post">
+      <div class="modal-body">
+        <div class="mb-2">
+          <label for="name" class="form-label">Name <small class="text-danger">*</small></label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+        </div>
+          <div class="mb-2">
+            <label for="email" class="form-label">Email <small class="text-danger">*</small></label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
+          </div>
+          <div class="mb-2">
+            <label for="mobile" class="form-label">Mobile <small class="text-danger">*</small></label>
+            <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile number" required>
+          </div>
+          <div class="mb-2">
+            <label for="course" class="form-label">Course <small class="text-danger">*</small></label>
+            <select class="form-select multiple-select" name="course" id="course" aria-label="Course" required>
+              <option selected disabled>Select Course</option>
+              <option value="Bachelor in Theology (B.Th)">Bachelor in Theology (B.Th)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div data-toggle-group="location">
+            <div class="mb-2">
+                  <label for="country" class="form-label">Country <small class="text-danger">*</small></label>
+                  <select name="country" class="form-select multiple-select country CountrySelect" data-toggle="country" data-country="India" required id="country">
+                  </select>
+            </div>
+            <div class="mb-2">
+                  <label for="state" class="form-label">State <small class="text-danger">*</small></label>
+                  <select name="state" class="form-select multiple-select state" data-toggle="state" data-state="" required id="state">
+                  </select>
+            </div>
+         </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+      </form>
     </div>
   </div>
-</footer><!-- End Footer -->
+</div>
+<!-- Apply Now Modal end -->
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-<script src="assets/js/dbs-main.js"></script>
+  <script src="assets/js/jquery-3.7.0.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/countries.min.js"></script>
+  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="assets/js/dbs-main.js"></script>
 
 </body>
 

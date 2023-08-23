@@ -741,10 +741,11 @@ section {
 .counts .counters i {
   font-size: 25px;
   padding: 14px;
-  background: #18a551;
-  color: #fff;
+  background: #fff;
+  color: #18a551;
   border-radius: 50px;
   margin-bottom: 10px;
+  box-shadow: 0 0 15px 0px rgb(0 0 0 / 10%);
 }
 
 /*--------------------------------------------------------------
@@ -875,9 +876,8 @@ section {
 # Courses
 --------------------------------------------------------------*/
 .courses .course-item {
-  border-radius: var(--bs-border-radius);
+  border-radius: 5px;
   border: 1px solid #eef0ef;
-  overflow: hidden;
 }
 
 .courses .course-content {
@@ -1601,17 +1601,11 @@ section {
   font-weight: bold;
   color: #444444;
   position: relative;
-  padding-bottom: 10px;
-}
-
-#footer .footer-newsletter p {
-  color: #777777;
-  margin-bottom: 0;
-  font-size: 14px;
+  padding-bottom: 12px;
 }
 
 #footer .footer-newsletter form {
-  margin-top: 25px;
+  margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
   position: relative;
@@ -2110,14 +2104,4 @@ section {
 .video-wrap:hover .play-wrap {
 	width: 70px;
 	height: 70px
-}
-
-.sidebar .apply-form {
-  padding: 30px 30px;
-  border: 1px solid #eef0ef;
-  border-radius: var(--bs-border-radius);
-  box-shadow: 0 0 15px 0px rgb(0 0 0 / 15%);
-}
-.sidebar .apply-form h3 {
-  
 }
