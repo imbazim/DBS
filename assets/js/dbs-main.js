@@ -58,7 +58,7 @@
     /**
    * Hero Slider
    */
-    var swiper = new Swiper(".sliderFeaturedPosts", {
+    var swiper = new Swiper(".dbsSlider", {
       spaceBetween: 0,
       speed: 500,
       centeredSlides: true,
