@@ -75,9 +75,7 @@
       navigation: {
         nextEl: ".custom-swiper-button-next",
         prevEl: ".custom-swiper-button-prev",
-      },
-      effect: 'cards',
-      crossFade: true
+      }
     });
 
   /**
